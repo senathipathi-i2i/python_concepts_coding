@@ -1,0 +1,36 @@
+For loop:
+--------
+
+*The using for we exactly know the no of iteration
+*for(initialization; condition; iteration)
+*In 'for' loop the initialization once done is never repeated
+
+while loop:
+----------
+
+*while loop we doest know exact iteraion in that time we prefer for while loop
+*while ( condition) 
+
+map:
+----
+*map we are using if we want to all ans for example if the condition is correct or it may not correct i want to check all item
+and all answer in that situation we as map
+
+*map return map object as a value
+
+syntax => map(fun,iter)
+
+
+Reduce:
+-------
+
+*Reduce take a two element first the do that function then same like that finally gave the final output
+
+syntax=> reduce(fun,seq)
+
+
+Generator
+---------
+
+*memeory allocate at run time 
+*using yield keyword instance of return
