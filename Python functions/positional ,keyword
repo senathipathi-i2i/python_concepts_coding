@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[8]:
+
+
+def my_function(*kids):
+    #print("The youngest child is " + kids[3])
+    for i in kids:
+        print("The youngest child is ",i)
+my_function("Emil", "Tobias", "Linus",'sethu')
+
+
+# In[23]:
+
+
+def my_function(**kid):
+    print("His last name is ", kid['acc'])
+
+my_function(fname = "Tobias", lname = "Refsnes", acc = 23212)
+
+
+# In[1]:
+
+
+def myFun(*arg,**kid):
+    print("args: ", arg[1])
+    print("kwargs: ", kid['f'])
+  
+  
+# Now we can use both *args ,**kwargs
+# to pass arguments to this function :
+myFun('geeks','for','geeks',first="Geeks",mid=12, f=0.343, last="Geeks")
+
+
+# In[ ]:
+
+
+
+
