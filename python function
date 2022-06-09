@@ -1,0 +1,290 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+# Program to show the use of lambda functions
+double =lambda x , y : x * y *2
+
+print(double(5,2))
+
+
+# In[2]:
+
+
+#filter function
+
+# Program to filter out only the even items from a list
+my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+
+new_list = list(filter(lambda x: (x%2 == 0) , my_list))
+
+print(new_list)
+
+
+# In[3]:
+
+
+#map function
+# Program to double each item in a list using map()
+
+my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+
+new_list = list(map(lambda x: x * 2 , my_list))
+
+print(new_list)
+
+
+# In[6]:
+
+
+my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+
+new_list = list(map(lambda x: x%y==0, my_list))
+
+print(new_list)
+
+
+# In[27]:
+
+
+my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+
+new_list = list(map(lambda x : x if(x%2==0) else 0, my_list))
+
+print(new_list)
+
+
+# In[29]:
+
+
+my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+
+new_list = list(filter(lambda x: x%2==0, my_list))
+
+print(new_list)
+
+
+# In[7]:
+
+
+numbers = (2,4,3,6,7)
+
+my_list = tuple(map(lambda x: x*2, numbers))
+print(my_list)
+
+
+# In[32]:
+
+
+numbers = (1, 2, 3, 4)
+result = map(lambda x: ((2*3*5)+x) + x, numbers)
+print(list(result))
+
+
+# In[33]:
+
+
+# Python program to demonstrate working
+# of map.
+
+#Return double of n
+def addition(n):
+    return n + n
+
+#We double all numbers using map()
+numbers = (1, 2, 3, 4)
+result = map(addition, numbers)
+print(list(result))
+
+
+# In[55]:
+
+
+#zip function
+first_name = [ "Manjeet", "Nikhil", "Shambhavi", "Astha" ]
+last_name = [ 'aa', 'bb', 'cc', 'dd', 'ee']
+salary = [1000,2000,3000,4000]
+ 
+# using zip() to map values
+mapped = zip(first_name,last_name,salary)
+
+# unz = list(mapped)
+
+# for i in mapped:
+#     print(list(i))
+    
+k = zip(*unz)
+print(list(k))
+
+
+# In[56]:
+
+
+#zip function
+first_name = [ "Manjeet", "Nikhil", "Shambhavi", "Astha" ]
+last_name = [ 'aa', 'bb', 'cc', 'dd', 'ee']
+salary = [1000,2000,3000,4000]
+ 
+# using zip() to map values
+mapped = zip(first_name,last_name,salary)
+
+# unz = list(mapped)
+
+# for i in mapped:
+# print(list(i))
+    
+k = zip(*unz)
+print(list(k))
+
+
+# In[64]:
+
+
+# python
+# Python program to illustrate
+# enumerate function
+l1 =["eat" ,"sleep", "repeat"]
+s1 = "geek"
+
+# creating enumerate objects
+obj1 = enumerate(l1)
+obj2 = enumerate(s1)
+
+print ("Return type:", type(obj1))
+print (list(enumerate(l1,3)))
+
+# changing start index to 2 from 0
+print (list(enumerate(s1, 2)))
+
+
+# In[65]:
+
+
+# This program shows various identities
+str1 = "geek"
+print(id(str1))
+
+str2 = "geek"
+print(id(str2))
+
+# This will return True
+print(id(str1) == id(str2))
+
+# Use in Lists
+list1 = ["aakash", "priya", "abdul"]
+print(id(list1[0]))
+print(id(list1[2]))
+
+# This returns false
+print(id(list1[0])==id(list1[2]))
+
+
+# In[74]:
+
+
+# This program shows various identities
+str1 = "geek"
+print(id(str1))
+
+str2 = "geek"
+print(id(str2))
+
+# This will return True
+print(id(str1) == id(str2))
+
+# Use in Lists
+list1 = ["aakash", "priya", "abdul","aakash"]
+print(id(list1[0]))
+print(id(list1[2]))
+print(id(list1[3]))
+
+# This returns false
+print(id(list1[0])==id(list1[2]))
+
+
+# In[7]:
+
+
+# Python Program to
+# show range() basics
+# printing a number
+
+for i in range(10,50,2):
+    print(i, end=" ")
+    print("\n")
+
+# using range for iteration
+l = [10, 20, 30, 40]
+for i in range(len(l)):
+    print(l[i], end=" ")
+
+
+# performing sum of natural
+# number
+sum = 0
+for i in range(1, 11):
+    sum = sum + i
+print("Sum of first 10 natural number :", sum)
+
+
+# In[94]:
+
+
+l = "senathaijkasbg"
+m=iter(l)
+print(set(m))
+
+
+# In[1]:
+
+
+# python code to demonstrate working of reduce()
+
+# importing functools for reduce()
+import functools
+
+# initializing list
+lis = [1, 3, 5, 6, 2, ]
+
+# using reduce to compute sum of list
+print("The sum of the list elements is : ", end="")
+print(functools.reduce(lambda a, b: a+b, lis))
+
+# using reduce to compute maximum element from list
+print("The maximum element of the list is : ", end="")
+print(functools.reduce(lambda a, b: a if a > b else b, lis))
+
+
+# In[2]:
+
+
+# python code to demonstrate summation
+# using reduce() and accumulate()
+
+# importing itertools for accumulate()
+import itertools
+
+# importing functools for reduce()
+import functools
+
+# initializing list
+lis = [1, 3, 4, 10, 4]
+
+# printing summation using accumulate()
+print("The summation of list using accumulate is :", end="")
+print(list(itertools.accumulate(lis, lambda x, y: x+y)))
+
+# printing summation using reduce()
+print("The summation of list using reduce is :", end="")
+print(functools.reduce(lambda x, y: x+y, lis))
+
+
+# In[ ]:
+
+
+class demo():
+    a=10
+    
+
