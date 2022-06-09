@@ -1,0 +1,8 @@
+#creating class & just accesing
+class myclass:
+    c=10
+    def demo(self):
+        print("hello")
+        
+obj_class=myclass()
+obj_class.demo()
