@@ -1,0 +1,25 @@
+#inheritance
+class version1:
+    def genaration1(self):
+        print("hiii")
+        print("hello")
+        
+class version2(version1):
+    def genaration2(self):
+        print('welcome')
+        print('to')
+        
+class version3(version2):
+    def genaration3(self):
+        print('our team')
+        
+if __name__=="__main__":
+
+    obj=version3()
+    obj.genaration1()
+    obj.genaration2()
+    obj.genaration3()
+
+    
+
+    
