@@ -19,6 +19,28 @@ if __name__=="__main__":
     obj.genaration1()
     obj.genaration2()
     obj.genaration3()
+    
+#multiple inheritance
+
+#multiple inheritance
+
+class addition():
+    def add(self):
+        a=10
+        b=30
+        print(a+b)
+class subraction():
+    def sub(self):
+        c=23
+        d=45
+        print(c-d)
+class input(addition,subraction):
+    def base(self):
+        self.add()
+        self.sub()
+        
+obj=input()
+obj.base()
 
     
 
